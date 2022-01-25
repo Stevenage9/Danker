@@ -1,7 +1,6 @@
 import pyautogui
 import time
 
-repeats=100000
 print("Thanks for using this bot. For authorization, and program purpose, you must verify commands.")
 time.sleep(1.5)
 
@@ -18,7 +17,7 @@ pressenter=input("Open discord window(maximised) and press enter")
 print("Starting in 3 seconds...")
 time.sleep(3)
 
-for i in range(0, repeats):
+while True:
     if message1 != "":
         pyautogui.typewrite(message1)
         pyautogui.press("enter")
